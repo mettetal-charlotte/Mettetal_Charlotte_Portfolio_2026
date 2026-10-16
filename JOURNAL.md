@@ -1,1 +1,1 @@
-Vendredi 16 octobre : Création du dépôt Github. Création des dossiers styles, layouts, components et assets. Installation de bun, tailwind et DaisyUI. Création de mon thème portfolio sur DaisyUI. 
+Vendredi 16 octobre : Création du dépôt Github. Création des dossiers styles, layouts, components et assets. Installation de bun, tailwind et DaisyUI. Création de mon thème portfolio sur DaisyUI. Création du header, j'ai rencontré des difficultés pour aligner mon logo avec mon menu.
