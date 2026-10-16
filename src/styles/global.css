@@ -40,3 +40,22 @@
 body {
     font-family: "Merriweather", serif;
 }
+
+@theme {
+    --font-title: "Prata", serif;
+    --font-family: "Merriweather", serif;
+
+    --text-h1d: 100px;
+    --text-h2d: 70px;
+    --text-body1d: 40px;
+    --text-body2d: 30px;
+    --text-bodyd: 20px;
+
+    --my-grid: repeat(11, minmax(0, 1fr));
+}
+
+@layer components {
+    .grille {
+        @apply lg:grid lg:grid-cols-(--my-grid) lg:m-7.5 lg:gap-[25px];
+    }
+}

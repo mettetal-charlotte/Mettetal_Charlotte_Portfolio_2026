@@ -1,18 +1,22 @@
 ---
 import "../styles/global.css";
 import Linkedin from "../assets/icon/LinkedIn.svg";
-import Behance from "../assets/icon/behance.svg"
+import Behance from "../assets/icon/behance.svg";
 ---
 
 <footer>
     <nav>
-        <p>Charlotte Mettetal</p>
-        <ul>
-            <li><a href="/mentions_legales">Mentions légales</a></li>
-            <li>Tous droit réservés</li>
-        </ul>
-        <p>Retrouvez moi</p>
-        <Linkedin class="h-6 w-auto m-2"/>
-        <Behance class="h-6 w-auto m-2"/>
+        <div class="grid grid-cols-11">
+            <p class="col-start-2 col-span-2">Charlotte Mettetal</p>
+            <ul class="col-start-5 col-span-3">
+                <li><a href="/mentions_legales">Mentions légales</a></li>
+                <li>Tous droit réservés</li>
+            </ul>
+            <p class="col-start-9 col-span-3">Retrouvez moi</p>
+            <ul class="flex items-center justify-between col-start-9">
+                <li><Linkedin class="h-6 w-auto m-2 col-start-9" /></li>
+                <li><Behance class="h-6 w-auto m-2" /></li>
+            </ul>
+        </div>
     </nav>
 </footer>
