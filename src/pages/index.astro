@@ -6,9 +6,32 @@ import Footer from "../components/Footer.astro";
 
 <Layout>
 	<Header />
-	<div class="flex items-center justify-between m-4" style="--text-bodyd">
-		<p>Charlotte Mettetal</p>
-		<p class="text-primary">01/05</p>
-	</div>
+	<section>
+		<div class="flex items-center justify-between m-4 font-bodyd">
+			<p class="ml-5">Charlotte Mettetal</p>
+			<p class="text-primary">01/05</p>
+		</div>
+		<div class="ligne"></div>
+		<h1 class="font-title text-mobile1 lg:text-h1d ml-15">
+			Entre les lignes, la création
+		</h1>
+		<p class="text-bodyd ml-15">
+			Étudiante en deuxième année du BUT MMI, je me suis spécialisée en
+			création numérique. Je conçois des expériences web et des identités
+			visuelles avec une conviction : le design doit combiner esthétique
+			et sens du détail. J'essaye de rendre le code et la création
+			numérique accessible à tous.
+		</p>
+		<div class="flex items-center justify-between m-4">
+			<p class="ml-5">Mes derniers projets</p>
+			<p class="text-primary">02/05</p>
+		</div>
+		<div class="ligne"></div>
+		<div class="flex items-center justify-between m-4">
+			<h2 class="font-title text-h2d ml-10">Éditer pour le web</h2>
+			<a href="/projets" class="btn btn-primary">Tous mes projets</a>
+		</div>
+		
+	</section>
 	<Footer />
 </Layout>

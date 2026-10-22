@@ -45,11 +45,13 @@ body {
     --font-title: "Prata", serif;
     --font-family: "Merriweather", serif;
 
-    --text-h1d: 100px;
+    --text-h1d: 90px;
     --text-h2d: 70px;
     --text-body1d: 40px;
     --text-body2d: 30px;
     --text-bodyd: 20px;
+    --text-mobile1: 40px;
+    --text-mobile2: 20px;
 
     --my-grid: repeat(11, minmax(0, 1fr));
 }
@@ -57,5 +59,12 @@ body {
 @layer components {
     .grille {
         @apply lg:grid lg:grid-cols-(--my-grid) lg:m-7.5 lg:gap-[25px];
+    }
+
+    .ligne{
+        width: 1500px;
+            height: 2px;
+            background-color: black;
+            margin: 2rem auto;
     }
 }
