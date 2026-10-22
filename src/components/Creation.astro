@@ -1,0 +1,89 @@
+---
+import { Image } from "astro:assets";
+import Figma from "../assets/images/figma.webp";
+import Affinity from "../assets/images/affinity.webp";
+import Davinci from "../assets/images/davinci.webp";
+import AstroLogo from "../assets/images/astro.webp";
+import TailwindLogo from "../assets/images/tailwind.webp";
+import PocketbaseLogo from "../assets/images/pocketbase.webp";
+import HTMLLogo from "../assets/images/html5.webp";
+import CSSLogo from "../assets/images/css.webp";
+import JavaScriptLogo from "../assets/images/js.webp";
+---
+
+<section>
+    <div class="flex items-center justify-between m-4">
+        <p class="ml-5">À l'atelier / Mes outils</p>
+        <p class="text-primary">04/05</p>
+    </div>
+    <div class="ligne"></div>
+    <div class="flex items-center justify-between">
+        <h2 class="font-title text-h2d ml-15">Pour créer</h2>
+        <div class="flex item-center justify-between">
+            <Image src={Figma} alt="Logo figma" class="w-20" />
+            <p class="p-2">
+                Figma
+                <br /> Concevoir & prototyper
+            </p>
+        </div>
+        <div class="flex item-center justify-between">
+            <Image src={Affinity} alt="Logo Affinity " class="w-20" />
+            <p class="p-2">
+                Affinity
+                <br />Dessiner & mise en page
+            </p>
+        </div>
+        <div class="flex items-center justify-between">
+            <Image src={Davinci} alt="Logo Davinci resolve" class="w-20" />
+            <p class="p-2">
+                Davinci resolve
+                <br /> Montages vidéos
+            </p>
+        </div>
+    </div>
+    <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between ml-115 p-5">
+            <Image src={AstroLogo} alt="Logo Davinci resolve" class="w-20" />
+            <p class="p-2">
+                Astro
+                <br /> Développer pour le web
+            </p>
+        </div>
+        <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between mr-20">
+                <Image src={TailwindLogo} alt="Logo Tailwind" class="w-20"/>
+                <p class="p-2">Tailwind
+                    <br/>Couleurs & styles
+                </p>
+            </div>
+        </div>
+        <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between">
+                <Image src={PocketbaseLogo} alt="Logo Pocketbase" class="w-20"/>
+                <p class="p-2">Pocketbase
+                    <br/>Base de données 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between ml-115 p-5">
+            <Image src={HTMLLogo} alt="Logo HTML" class="w-20"/>
+            <p class="p-2">HTML
+                <br/> Développer pour le web
+            </p>
+        </div>
+        <div class="flex items-center justify-between mr-10">
+            <Image src={CSSLogo} alt="Logo CSS" class="w-20"/>
+            <p class="p-2">CSS
+                <br/>Couleurs & styles
+            </p>
+        </div>
+        <div class="flex items-center justify-between mr-7">
+            <Image src={JavaScriptLogo} alt="Logo JavaScript" class="w-30"/>
+            <p>JavaScript
+                <br/>Animation
+            </p>
+        </div>
+    </div>
+</section>
