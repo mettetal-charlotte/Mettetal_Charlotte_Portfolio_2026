@@ -42,7 +42,7 @@ body {
 }
 
 @theme {
-    --font-title: "Prata", serif;
+    --font-title: "Prata";
     --font-family: "Merriweather", serif;
 
     --text-h1d: 90px;
@@ -64,7 +64,7 @@ body {
 
     .ligne{
         width: 1500px;
-            height: 2px;
+            height: 1px;
             background-color: black;
             margin: 2rem auto;
     }
