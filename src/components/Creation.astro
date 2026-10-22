@@ -12,77 +12,76 @@ import JavaScriptLogo from "../assets/images/js.webp";
 ---
 
 <section>
-    <div class="flex items-center justify-between m-4">
+    <div class="flex items-center justify-between gap-4 py-4">
         <p class="ml-5">À l'atelier / Mes outils</p>
         <p class="text-primary">04/05</p>
     </div>
     <div class="ligne"></div>
-    <div class="flex items-center justify-between">
-        <h2 class="font-title text-h2d ml-15">Pour créer</h2>
-        <div class="flex item-center justify-between">
+    <h2 class="font-title text-mobile2 sm:text-4xl lg:text-h2d ml-4 sm:ml-8 lg:ml-15">
+        Pour créer
+    </h2>
+    <div class="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="flex items-center">
             <Image src={Figma} alt="Logo figma" class="w-20" />
             <p class="p-2">
                 Figma
                 <br /> Concevoir & prototyper
             </p>
         </div>
-        <div class="flex item-center justify-between">
+        <div class="flex items-center">
             <Image src={Affinity} alt="Logo Affinity " class="w-20" />
             <p class="p-2">
                 Affinity
                 <br />Dessiner & mise en page
             </p>
         </div>
-        <div class="flex items-center justify-between">
+        <div class="flex items-center">
             <Image src={Davinci} alt="Logo Davinci resolve" class="w-20" />
             <p class="p-2">
                 Davinci resolve
                 <br /> Montages vidéos
             </p>
         </div>
-    </div>
-    <div class="flex items-center justify-between">
-        <div class="flex items-center justify-between ml-115 p-5">
+        <div class="flex items-center">
             <Image src={AstroLogo} alt="Logo Davinci resolve" class="w-20" />
             <p class="p-2">
                 Astro
                 <br /> Développer pour le web
             </p>
         </div>
-        <div class="flex items-center justify-between">
-            <div class="flex items-center justify-between mr-20">
-                <Image src={TailwindLogo} alt="Logo Tailwind" class="w-20"/>
-                <p class="p-2">Tailwind
-                    <br/>Couleurs & styles
-                </p>
-            </div>
-        </div>
-        <div class="flex items-center justify-between">
-            <div class="flex items-center justify-between">
-                <Image src={PocketbaseLogo} alt="Logo Pocketbase" class="w-20"/>
-                <p class="p-2">Pocketbase
-                    <br/>Base de données 
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="flex items-center justify-between">
-        <div class="flex items-center justify-between ml-115 p-5">
-            <Image src={HTMLLogo} alt="Logo HTML" class="w-20"/>
-            <p class="p-2">HTML
-                <br/> Développer pour le web
+        <div class="flex items-center">
+            <Image src={TailwindLogo} alt="Logo Tailwind" class="w-20" />
+            <p class="p-2">
+                Tailwind
+                <br />Couleurs & styles
             </p>
         </div>
-        <div class="flex items-center justify-between mr-10">
-            <Image src={CSSLogo} alt="Logo CSS" class="w-20"/>
-            <p class="p-2">CSS
-                <br/>Couleurs & styles
+        <div class="flex items-center">
+            <Image src={PocketbaseLogo} alt="Logo Pocketbase" class="w-20" />
+            <p class="p-2">
+                Pocketbase
+                <br />Base de données
             </p>
         </div>
-        <div class="flex items-center justify-between mr-7">
-            <Image src={JavaScriptLogo} alt="Logo JavaScript" class="w-30"/>
-            <p>JavaScript
-                <br/>Animation
+        <div class="flex items-center">
+            <Image src={HTMLLogo} alt="Logo HTML" class="w-20" />
+            <p class="p-2">
+                HTML
+                <br />Développer pour le web
+            </p>
+        </div>
+        <div class="flex items-center">
+            <Image src={CSSLogo} alt="Logo CSS" class="w-20" />
+            <p class="p-2">
+                CSS
+                <br />Couleurs & styles
+            </p>
+        </div>
+        <div class="flex items-center">
+            <Image src={JavaScriptLogo} alt="Logo JavaScript" class="w-30" />
+            <p class="p-2">
+                JavaScript
+                <br />Animation
             </p>
         </div>
     </div>

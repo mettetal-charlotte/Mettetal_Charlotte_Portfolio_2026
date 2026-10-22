@@ -9,48 +9,49 @@ import Creation from "../components/Creation.astro";
 
 <Layout>
 	<Header />
-	<section>
-		<div class="flex items-center justify-between m-4 font-bodyd">
+	<main>
+		<section class="px-4 sm:px-6 lg:px-8">
+		<div class="flex items-center justify-between gap-4 py-4 font-bodyd">
 			<p class="ml-5">Charlotte Mettetal</p>
 			<p class="text-primary">01/05</p>
 		</div>
 		<div class="ligne"></div>
-		<h1 class="font-title text-mobile1 lg:text-h1d ml-15">
+		<h1 class="font-title text-mobile1 sm:text-5xl lg:text-h1d ml-4 sm:ml-8 lg:ml-15">
 			Entre les lignes, la création
 		</h1>
-		<p class="text-body3d ml-15">
+		<p class="text-base sm:text-body3d ml-4 sm:ml-8 lg:ml-15 max-w-5xl">
 			Étudiante en deuxième année du BUT MMI, je me suis spécialisée en
 			création numérique. Je conçois des expériences web et des identités
 			visuelles avec une conviction : le design doit combiner esthétique
 			et sens du détail. J'essaye de rendre le code et la création
 			numérique accessible à tous.
 		</p>
-		<div class="flex items-center justify-between m-4">
+		<div class="flex items-center justify-between gap-4 py-4">
 			<p class="ml-5">Mes derniers projets</p>
 			<p class="text-primary">02/05</p>
 		</div>
 		<div class="ligne"></div>
-		<div class="flex items-center justify-between m-4">
-			<h2 class="font-title text-h2d ml-10">Éditer pour le web</h2>
-			<a href="/projets" class="btn btn-primary">Tous mes projets</a>
+		<div class="flex flex-col gap-3 py-4 sm:flex-row sm:items-center sm:justify-between">
+			<h2 class="font-title text-mobile2 sm:text-4xl lg:text-h2d ml-4 sm:ml-8 lg:ml-10">Éditer pour le web</h2>
+			<a href="/projets" class="btn btn-primary self-start sm:self-auto">Tous mes projets</a>
 		</div>
-		<p class="ml-300 text-body4d">
+		<p class="ml-4 sm:ml-8 lg:ml-20 text-body4d">
 			Concevoir des interfaces pour apprendre
 		</p>
-		<div class="flex items-center justify-between m-4">
+		<div class="grid grid-cols-1 gap-8 py-4 lg:grid-cols-2 lg:gap-12">
 			<Projet1 />
 			<Projet2 />
 		</div>
-		<div class="flex items-center justify-between m-4">
+		<div class="flex items-center justify-between gap-4 py-4">
 			<p class="ml-5">Domaines d'expertise</p>
 			<p class="text-primary">03/05</p>
 		</div>
 		<div class="ligne"></div>
-		<h2 class="font-title text-h2d ml-15">Compétences</h2>
-		<div class="flex items-center justify-between">
-			<div>
-				<p class="text-primary ml-15">01 - Design & UI/UX</p>
-				<ul class="ml-15">
+		<h2 class="font-title text-mobile2 sm:text-4xl lg:text-h2d ml-4 sm:ml-8 lg:ml-15">Compétences</h2>
+		<div class="grid grid-cols-1 gap-8 py-6 sm:grid-cols-2 lg:grid-cols-3">
+			<div class="min-w-0">
+				<p class="text-primary ml-4 sm:ml-8 lg:ml-15">01 - Design & UI/UX</p>
+				<ul class="ml-4 sm:ml-8 lg:ml-15">
 					<li>• conception d'interfaces</li>
 					<li>• création d'identités visuelles</li>
 					<li>
@@ -59,7 +60,7 @@ import Creation from "../components/Creation.astro";
 					</li>
 				</ul>
 			</div>
-			<div>
+			<div class="min-w-0">
 				<p class="text-primary">02 - Développement web & Déploiement</p>
 				<ul>
 					<li>• intégration front-end</li>
@@ -70,7 +71,7 @@ import Creation from "../components/Creation.astro";
 					<li>• configuration et déploiement sur serveurs</li>
 				</ul>
 			</div>
-			<div>
+			<div class="min-w-0">
 				<p class="text-primary">03 - Création numérique</p>
 				<ul>
 					<li>• montage vidéo</li>
@@ -80,23 +81,24 @@ import Creation from "../components/Creation.astro";
 			</div>
 		</div>
 		<Creation />
-		<div class="bg-accent">
-			<div class="flex items-center justify-between p-2">
+		<div class="bg-accent p-4 sm:p-6 lg:p-8">
+			<div class="flex items-center justify-between gap-4 p-2">
 				<p class="ml-5">Contact</p>
 				<p class="text-primary">05/05</p>
 			</div>
 			<div class="ligne"></div>
-			<div class="flex items-center justify-between">
-				<h2 class="font-title text-h2d ml-15">
-					Et si on écrivait la <br />suite ensemble ?
+			<div class="flex flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+				<h2 class="font-title text-mobile2 sm:text-4xl lg:text-h2d sm:ml-4 lg:ml-15">
+					Et si on écrivait la <br class="hidden sm:block" />suite ensemble ?
 				</h2>
-				<p class="text-body2d mr-5">
+				<p class="text-base sm:text-body2d sm:mr-5">
 					Un projet, une demande de rencontre ? <br />N'hésitez pas,
 					écrivez moi !
 				</p>
 			</div>
-			<a href="/contact" class="btn btn-primary text-body3d ml-280 m-4">Contact</a>
+			<a href="/contact" class="btn btn-primary text-body3d mt-4 sm:ml-20 lg:ml-40">Contact</a>
 		</div>
-	</section>
+		</section>
+	</main>
 	<Footer />
 </Layout>

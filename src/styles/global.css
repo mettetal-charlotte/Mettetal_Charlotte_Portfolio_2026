@@ -63,9 +63,9 @@ body {
     }
 
     .ligne{
-        width: 1500px;
-            height: 1px;
-            background-color: black;
-            margin: 2rem auto;
+        width: min(1500px, calc(100% - 2rem));
+        height: 1px;
+        background-color: black;
+        margin: 2rem auto;
     }
 }
