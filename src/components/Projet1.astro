@@ -1,21 +1,27 @@
 ---
 import { Image } from "astro:assets";
 import liseMeitner from "../assets/images/lisemeitner.webp";
+import FlecheDroite from "../assets/icon/fleche_droite.svg";
 ---
 
 <section class="ml-20">
     <div>
         <Image src={liseMeitner} alt="Lise Meitner" class="mx-20 w-80" />
-        <p class="text-primary text-body4d p-2">01- Site web • Projet individuel</p>
+        <p class="text-primary text-body4d p-2">
+            01- Site web • Projet individuel
+        </p>
         <p class="text-body1d p-2">Lise Meitner & l'effet Matilda</p>
         <p class="p-2">
             L'histoire d'une scientifique invisibilisée et d'un phénomène très
             répendu.
             <br />De la conception au développement
         </p>
-        <div class="flex items-center m-4">
+        <div class="flex items-center p-2 justify-between">
             <p class="text-primary text-body4d">HTML / CSS</p>
-            <a href="/projet1" class="ml-30">Découvrir le projet</a>
+            <a href="/projet1" class="inline-flex items-center gap-2 justify-center">
+                <span>Découvrir le projet</span>
+                <FlecheDroite/>
+            </a>
         </div>
     </div>
 </section>

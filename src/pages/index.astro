@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Projet1 from "../components/Projet1.astro";
+import Projet2 from "../components/Projet2.astro";
 ---
 
 <Layout>
@@ -33,7 +34,10 @@ import Projet1 from "../components/Projet1.astro";
 			<a href="/projets" class="btn btn-primary">Tous mes projets</a>
 		</div>
 		<p class="ml-300 text-body4d"> Concevoir des interfaces pour apprendre</p>
-		<Projet1/>
+		<div class="flex items-center justify-between m-4">
+			<Projet1/>
+			<Projet2/>
+		</div>
 	</section>
 	<Footer />
 </Layout>
