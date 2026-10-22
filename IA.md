@@ -1,0 +1,1 @@
+Semaine 2 : J'ai utilisé Copilot pour corriger l'importation de mon image de Lise Meinter car celle-ci ne s'affichait pas. J'ai ensuite ajouster la taille de l'image et sa position selon ma maquette.
