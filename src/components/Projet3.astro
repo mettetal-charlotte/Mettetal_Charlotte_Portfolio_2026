@@ -1,0 +1,82 @@
+---
+import { Image } from "astro:assets";
+import Chateau from "../assets/images/chateau_montbeliard.webp";
+import Temple from "../assets/images/temple_saint_martin.webp";
+import Immeuble from "../assets/images/immeuble_lion_peugeot.webp";
+import FlecheDroite from "../assets/icon/fleche_droite.svg";
+---
+
+<section class="bg-neutral px-4 py-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between gap-4 font-body text-body4d ml-5">
+        <p>Projets académiques / Affiches & illustrations</p>
+        <p class="text-primary mr-5">02/03</p>
+    </div>
+    <div class="ligne"></div>
+
+    <div
+        class="flex flex-col gap-2 py-4 font-body text-body4d sm:flex-row sm:items-center sm:justify-between"
+    >
+        <h3 class="font-bold text-primary">
+            03 - Graphisme · Projet individuel
+        </h3>
+        <p class="sm:text-right">
+            Concevoir des affiches pour le patrimoine
+        </p>
+    </div>
+
+    <div
+        class="grid grid-cols-1 items-center gap-8 py-4 lg:grid-cols-[minmax(15rem,0.8fr)_minmax(0,2fr)] lg:gap-10"
+    >
+        <div class="flex flex-col items-start gap-5">
+            <h2 class="font-title text-3xl sm:text-4xl">
+                Des affiches pour Montbéliard
+            </h2>
+            <p class="font-body text-body4d">
+                Trois monuments, une même série. Illustrer le patrimoine de la
+                ville avec une direction graphique commune et un parcours qui
+                relie les lieux.
+            </p>
+            <p class="font-body text-body4d font-bold text-primary">
+                Illustration vectorielle / Affinity
+            </p>
+            <a
+                href="/projet3"
+                class="inline-flex items-center gap-3 font-body text-body4d"
+            >
+                <span>Découvrir le projet</span>
+                <FlecheDroite />
+            </a>
+        </div>
+
+        <div
+            class="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-3 sm:items-start"
+        >
+            <figure class="w-full max-w-64 text-center font-body text-body4d">
+                <Image
+                    src={Chateau}
+                    alt="Affiche représentant le Château de Montbéliard sur fond rouge"
+                    class="w-full"
+                />
+                <figcaption class="mt-2">
+                    Château de Montbéliard
+                </figcaption>
+            </figure>
+            <figure class="w-full max-w-64 text-center font-body text-body4d">
+                <Image
+                    src={Temple}
+                    alt="Affiche représentant le Temple Saint-Martin à Montbéliard sur fond rouge"
+                    class="w-full"
+                />
+                <figcaption class="mt-2">Temple Saint-Martin</figcaption>
+            </figure>
+            <figure class="w-full max-w-64 text-center font-body text-body4d">
+                <Image
+                    src={Immeuble}
+                    alt="Affiche représentant l'immeuble du Lion Peugeot sur fond rouge"
+                    class="w-full"
+                />
+                <figcaption class="mt-2">Immeuble du Lion Peugeot</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>

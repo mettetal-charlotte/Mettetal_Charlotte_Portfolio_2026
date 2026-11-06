@@ -17,8 +17,8 @@
     --color-secondary-content: #4A3B32;
     --color-accent: #F1DBD8;
     --color-accent-content: #4A3B32;
-    --color-neutral: oklch(14% 0.005 285.823);
-    --color-neutral-content: #FFFFFF;
+    --color-neutral: #E9E9E0;
+    --color-neutral-content: #000000;
     --color-info: #F9F6F0;
     --color-info-content: #D2BF37;
     --color-success: oklch(76% 0.177 163.223);
