@@ -1,0 +1,147 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import FlecheGauche from "../assets/icon/fleche_gauche.svg";
+import Accueil from "../assets/images/pageaccueilTacita.webp";
+import PageInscription from "../assets/images/inscription.webp";
+import AccueilAppli from "../assets/images/pageaccueilappli.webp";
+import Jeux from "../assets/images/pagejeux.webp";
+---
+
+<Layout>
+    <main>
+        <section>
+            <div
+                class="flex flex-col gap-2 py-4 sm:flex-row sm:items-center sm:justify-between sm:gap-4"
+            >
+                <p class="ml-5">Application - Projet à 3</p>
+                <p class="text-primary sm:text-right mr-5">
+                    Lien vers Tacita :
+                    <a href="http://tacita-lsf.luna-gouraud.fr/">Tacita</a>
+                    <br /> et l'application :
+                    <a href="https://tacita-lsf.luna-gouraud.fr/application/"
+                        >Application Tacita</a
+                    >
+                </p>
+            </div>
+            <div class="ligne"></div>
+            <a
+                href="/projets"
+                class="inline-flex items-center gap-3 py-2 font-body text-body4d ml-5"
+            >
+                <FlecheGauche />
+                <span>Retour aux projets</span>
+            </a>
+            <h1 class="font-title text-mobile1 lg:text-body1d ml-5">Tacita</h1>
+            <p class="py-2 font-body text-body4d font-bold text-primary ml-5">
+                Maquettage / Astro / Tailwind / Pocketbase
+            </p>
+            <div
+                class="grille grid grid-cols-1 items-start gap-8 py-4 lg:grid-cols-(--my-grid) lg:gap-[25px]"
+            >
+                <aside class="min-w-0 space-y-4 lg:col-span-1">
+                    <p class="font-body text-body4d font-bold">
+                        Expertise :
+                        <br />UI/UX
+                        <br />Dev Astro / Tailwind,
+                        <br />PocketBase
+                        <br />Responsive
+                        <br />VPS
+                        <br />Identité :
+                    </p>
+                    <div class="flex gap-2">
+                        <div
+                            class="block size-4 shrink-0 rounded-full border border-black bg-[#4D0218]"
+                            title="Rose foncé"
+                        >
+                        </div>
+                        <div
+                            class="block size-4 shrink-0 rounded-full border border-black bg-[#9F0712]"
+                            title="Rouge"
+                        >
+                        </div>
+                        <div
+                            class="block size-4 shrink-0 rounded-full border border-black bg-[#FFA2A2]"
+                            title="Rose"
+                        >
+                        </div>
+                        <div
+                            class="block size-4 shrink-0 rounded-full border border-black bg-[#EFEDE3]"
+                            title="Blanc cassé"
+                        >
+                        </div>
+                    </div>
+                </aside>
+
+                <article
+                    class="min-w-0 space-y-6 font-body text-body4d leading-relaxed lg:col-span-5"
+                >
+                    <p>
+                        Le deuxième projet important au cours de ma première
+                        année était à réaliser en équipe de trois. La commande
+                        demandait de réaliser un site web ou une application
+                        innovante. Nous avions six propositions. Avec mon équipe,
+                        nous avons choisi de réaliser une application pour
+                        apprendre la langue des signes française. Nous devions
+                        mettre en place une base de données afin d’utiliser les
+                        images pour les leçons et le jeux. Au cours de ce
+                        projet, j’ai touché à tous les domaines de travail. J’ai
+                        été webdesigneur, développeuse et chargée de
+                        communication.
+                    </p>
+                    <p>
+                        Tout d’abord, nous avons réfléchi à un nouveau nom pour
+                        notre application. Après avoir essayer avec le nom
+                        Pri-mates, nous sommes tombés d’accord sur Tacita, en
+                        référence à la déesse romaine du silence. De là, est né
+                        notre direction artistique. Nous avons opté pour un logo
+                        typographique simple pour éviter de faire un logo trop
+                        compliqué et non reconnaissable. Pour les couleurs, nous
+                        avons choisi une palette de rouges, du foncé au rose. Le
+                        rose est essentiellement dans l’application. Cette
+                        palette permet de transmettre la valeur principale de
+                        Tacita : la bienveillance. Nous avons utilisés des
+                        typographies simples sur l’ensemble du site et de
+                        l’application.
+                    </p>
+                    <p>
+                        L’application ne se limite pas à des leçons, avec des
+                        images et des gifs. Elle dispose également de mini-jeux,
+                        un memory, un quiz et un jeu d’association. Les
+                        mini-jeux sont disponible lorsqu’on fini la leçon de
+                        l’unité. Les images utilisées ont été réalisé par nos
+                        soins.
+                    </p>
+                </article>
+                <div
+                    class="min-w-0 border border-black bg-accent p-2 sm:p-5 lg:col-span-5"
+                >
+                    <div
+                        class="grid grid-cols-2 items-start gap-x-2 gap-y-2 sm:gap-x-5"
+                    >
+                        <Image
+                            src={Accueil}
+                            alt="Prototype de la page d'accueil"
+                            class="block h-auto w-full max-w-60"
+                        />
+                        <Image
+                            src={PageInscription}
+                            alt="Prototype de la page d'inscription"
+                            class="mt-8 block h-auto w-full max-w-60 sm:mt-16"
+                        />
+                        <Image
+                            src={AccueilAppli}
+                            alt="Prototype de la page d'accueil de l'application"
+                            class="-mt-4 block h-auto w-full max-w-40 sm:-mt-8"
+                        />
+                        <Image
+                            src={Jeux}
+                            alt="Prototype de la page jeux"
+                            class="mt-4 block h-auto w-full max-w-40 sm:mt-8"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
