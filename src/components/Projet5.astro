@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import FlecheDroite from "../assets/icon/fleche_droite.svg";
+import TarifsAlcool from "../assets/images/tarifsalcool.webp";
+import TarifsBoisson from "../assets/images/tarifssodas.webp";
+---
+
+<section class="min-w-0">
+    <div class="mx-auto w-full max-w-xl">
+        <div
+            class="grille grid grid-cols-1 items-start gap-4 sm:grid-cols-2 lg:gap-[25px]">
+            <Image
+                src={TarifsAlcool}
+                alt="Affiche de boissons alcoolisées avec les tarifs"
+                class="mx-auto max-w-50 sm:col-span-1 lg:col-span-5"
+            />
+            <Image
+                src={TarifsBoisson}
+                alt="Affiche de sodas aevc les tarifs"
+                class="mx-auto max-w-50 sm:col-span-1 lg:col-span-5 lg:col-start-7"
+            />
+        </div>
+        <p class="text-primary font-bold text-body4d p-2">
+            05 - Création associatives
+        </p>
+        <p class="text-mobile1 sm:text-body1d p-2">Des affiches pour NACA</p>
+        <p class="p-2">
+            Des affiches conçues pour les associations de mon village :
+            Neublans-Abergement Convivial et Accueillant et le Comité de la Fête
+            du Pain
+        </p>
+        <div class="flex flex-wrap items-center gap-3 p-2 justify-between">
+            <p class="text-primary font-bold text-body4d">
+                Illustration / Mise en page / Affinity
+            </p>
+            <a
+                href="/projet5"
+                class="inline-flex items-center gap-2 justify-center"
+            >
+                <span>Découvrir le projet</span>
+                <FlecheDroite />
+            </a>
+        </div>
+    </div>
+</section>

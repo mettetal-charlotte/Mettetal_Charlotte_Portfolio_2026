@@ -6,6 +6,7 @@ import Projet3 from "../components/Projet3.astro";
 import Projet4 from "../components/Projet4.astro";
 import Projet5 from "../components/Projet5.astro";
 ---
+
 <Layout>
     <main>
         <section class="px-4 sm:px-6 lg:px-8">
@@ -14,22 +15,100 @@ import Projet5 from "../components/Projet5.astro";
                 <p class="text-primary mr-5">01/03</p>
             </div>
             <div class="ligne"></div>
-            <div>
+            <div
+                class="grille grid grid-cols-1 items-start gap-4 sm:grid-cols-2"
+            >
                 <h1
                     class="font-title text-mobile1 lg:text-h1d sm:ml-8 lg:ml-15"
                 >
                     Éditer le web
                 </h1>
+                <nav>
+                    <button
+                        class="filtre-btn btn btn-primary px-4 py-1 transition-colors"
+                        data-filter="tout">Tous mes projets</button
+                    >
+                    <button
+                        class="filtre-btn px-4 py-1 hover:opacity-80 transition-colors"
+                        data-filter="academique">Projets académiques</button
+                    >
+                    <button
+                        class="filtre-btn px-4 py-1 hover:opacity-80 transition-colors"
+                        data-filter="personnel">Projets personnels</button
+                    >
+                </nav>
             </div>
-            <div class="grid grid-cols-1 gap-8 py-4 lg:grid-cols-2 lg:gap-12">
-                <Projet1 />
-                <Projet2 />
+            <div class="projet-carte" data-categorie="academique">
+                <p class="lg:ml-270 mt-8 mb-4">
+                    Concevoir des interfaces pour apprendre
+                </p>
+                <div
+                    class="grille grid grid-cols-1 gap-8 py-4 lg:grid-cols-2 lg:gap-12">
+                    <Projet1 />
+                    <Projet2 />
+                </div>
+                <Projet3 />
             </div>
-            <Projet3 />
-            <div class="grid grid-cols-1 gap-8 py-4 lg:grid-cols-2 lg:gap-12">
-                <Projet4 />
-                <Projet5/>
+            <div class="projet-carte" data-categorie="personnel">
+                <div
+                    class="flex items-center justify-between gap-4 text-body4d px-4 py-4 mt-8"
+                >
+                    <p class="lg:ml-5">
+                        Projets personnels / Linogravure & engagements
+                    </p>
+                    <p class="text-primary lg:mr-5">03 / 03</p>
+                </div>
+                <div class="ligne"></div>
+                <div
+                    class="flex flex-col gap-2 py-4 font-body text-body4d sm:flex-row sm:items-center sm:justify-between"
+                >
+                    <h2 class="font-title text-mobile1 lg:text-h1d ml-10">
+                        Hors du cadre
+                    </h2>
+                    <p class="sm:text-right">
+                        Entre activité manuelle et bénévolat
+                    </p>
+                </div>
+                <div
+                    class="grille grid grid-cols-1 gap-8 py-4 lg:grid-cols-2 lg:gap-12">
+                    <Projet4 />
+                    <Projet5 />
+                </div>
             </div>
         </section>
     </main>
 </Layout>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const boutons = document.querySelectorAll(".filtre-btn");
+        const projets = document.querySelectorAll(".projet-carte");
+
+        const classesActif = ["btn", "btn-primary"];
+
+        boutons.forEach((bouton) => {
+            bouton.addEventListener("click", () => {
+                const filtreChoisi = bouton.getAttribute("data-filter");
+                boutons.forEach((b) => {
+                    b.classList.remove(...classesActif);
+                    b.classList.add("hover:opacity-80");
+                });
+                bouton.classList.remove("hover:opacity-80");
+                bouton.classList.add(...classesActif);
+                projets.forEach((projet) => {
+                    const categorieProjet =
+                        projet.getAttribute("data-categorie");
+
+                    if (
+                        filtreChoisi === "tout" ||
+                        filtreChoisi === categorieProjet
+                    ) {
+                        projet.classList.remove("hidden");
+                    } else {
+                        projet.classList.add("hidden");
+                    }
+                });
+            });
+        });
+    });
+</script>
