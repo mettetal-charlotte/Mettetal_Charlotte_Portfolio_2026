@@ -3,8 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import Projet1 from "../components/Projet1.astro";
 import Projet2 from "../components/Projet2.astro";
 import Projet3 from "../components/Projet3.astro";
+import Projet4 from "../components/Projet4.astro";
+import Projet5 from "../components/Projet5.astro";
 ---
-
 <Layout>
     <main>
         <section class="px-4 sm:px-6 lg:px-8">
@@ -15,7 +16,8 @@ import Projet3 from "../components/Projet3.astro";
             <div class="ligne"></div>
             <div>
                 <h1
-                    class="font-title text-mobile1 lg:text-h1d sm:ml-8 lg:ml-15">
+                    class="font-title text-mobile1 lg:text-h1d sm:ml-8 lg:ml-15"
+                >
                     Éditer le web
                 </h1>
             </div>
@@ -23,7 +25,11 @@ import Projet3 from "../components/Projet3.astro";
                 <Projet1 />
                 <Projet2 />
             </div>
-            <Projet3/>
+            <Projet3 />
+            <div class="grid grid-cols-1 gap-8 py-4 lg:grid-cols-2 lg:gap-12">
+                <Projet4 />
+                <Projet5/>
+            </div>
         </section>
     </main>
 </Layout>

@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import FlecheDroite from "../assets/icon/fleche_droite.svg";
+import Panda from "../assets/images/panda_rouge.webp";
+---
+
+<section class="min-w-0">
+    <div class="mx-auto max-w-xl">
+        <Image
+            src={Panda}
+            alt="Panda linogravé et encré en rouge"
+            class="mx-auto w-full max-w-60"
+        />
+        <p class="text-primary font-bold text-body4d p-2">
+            04 - Pratique personnelle
+        </p>
+        <p class="text-mobile1 sm:text-body1d p-2">Linogravure</p>
+        <p class="p-2">
+            Un loisir manuel, découvret à MMI et pousuivit chez moi
+        </p>
+        <div class="flex flex-wrap items-center gap-3 p-2 justify-between">
+            <p class="text-primary font-bold text-body4d">Dessin / Gravure / Impression</p>
+            <a
+                href="/projet1"
+                class="inline-flex items-center gap-2 justify-center">
+                <span>Découvrir le projet</span>
+                <FlecheDroite />
+            </a>
+        </div>
+    </div>
+</section>
