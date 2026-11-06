@@ -2,4 +2,4 @@ Semaine 1 : Création du dépôt Github. Création des dossiers styles, layouts,
 
 Semaine 2 : Finalisation du global.css avec la crétion de la ligne horizontal, l'ajout de tailles de police. Importattion des images après convertion au format webp. J'ai ensuite créer les premières cards projets afin de les integrer à ma page d'accueil. J'ai construit la partie compétences. J'ai créé un composant pour la partie "à l'atelier". Enfin, j'ai créé la partie contact.
 
-Semaine 3 : 
+Semaine 3 : Création de la page des mentions légales. Je l'ai adapter pour quelle soit responsive. Ajout de la class "link link-hover" sur les "mentions légales" présentent dans le footer. Modification de l'espace avec la ligne. Création de la page contact. J'ai créer un bouton qui permet de télécharger mon CV. J'ai activée le mailto pour que lorsqu'une personne clique sur mon adresse mail, celle-ci renvoye à se boite mail.

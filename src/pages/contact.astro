@@ -1,0 +1,72 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import PhotoCV from "../assets/images/photo.webp";
+import Telechargement from "../assets/icon/telechargement.svg";
+---
+
+<Layout>
+    <main>
+        <section class="px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4 font-body">
+                <p class="ml-5">À propos</p>
+                <p class="text-primary mr-5">01/01</p>
+            </div>
+            <div class="ligne"></div>
+            <h1 class="font-title text-mobile1 lg:text-h1d ml-4 lg:ml-15">
+                En toute transparence
+            </h1>
+            <div
+                class="mx-auto grid max-w-5xl grid-cols-1 items-center gap-8 py-8 font-body text-mobile2 md:grid-cols-[11rem_minmax(0,1fr)] md:gap-10 lg:text-body3d"
+            >
+                <Image
+                    src={PhotoCV}
+                    alt="Photo représentant Charlotte"
+                    class="mx-auto h-36 w-36 rounded-full border border-base-content object-cover md:h-44 md:w-44"
+                />
+                <div class="space-y-5">
+                    <p>
+                        Étudiante en deuxième année du BUT MMI à Montbéliard.
+                        J’ai rejoins le parcours création numérique. Je souhaite
+                        développer ma créativité tout en apprenant les
+                        meilleures techniques pour représenter au mieux les
+                        besoins des prospects.
+                    </p>
+                    <p>
+                        Étant une lectrice invétérée, j’ai décidé de réaliser
+                        mon portfolio dans l’univers du livre. Après avoir
+                        cherché et regroupé les éléments caractéristiques du
+                        livre, j’ai analysé ce qui correspondait le mieux à
+                        l’univers que je voulais créer. Cet univers devait
+                        s’adapter au numérique. Alors j'ai décideé de présenter
+                        mon portfolio sous forme de magazine de design, ce qui
+                        m’a permit d’allier ma passion et mon parcours d’étude.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="flex flex-col gap-3 py-4 sm:flex-row sm:items-center sm:justify-between"
+            >
+                <p class="font-body text-mobile2 lg:text-body3d">
+                    N'hésitez pas à me contacter pour des projets
+                </p>
+                <a
+                    href="/CV_Charlotte_Mettetal.pdf"
+                    download="CV_Charlotte_Mettetal.pdf"
+                    class="btn btn-primary"
+                    class="inline-flex items-center gap-2 justify-center"
+                >
+                    <Telechargement />
+                    <span>Télécharger mon CV</span></a
+                >
+            </div>
+            <div class="text-center font-body text-mobile2 lg:text-body2d">
+                <a
+                href="mailto:charlotte.mettetal.07@gmail.com"
+                class="link link-hover">
+                charlotte.mettetal.07@gmail.com
+                </a>
+            </div>
+        </section>
+    </main>
+</Layout>
