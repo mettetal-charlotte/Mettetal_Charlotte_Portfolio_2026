@@ -1,0 +1,154 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import FlecheGauche from "../assets/icon/fleche_gauche.svg";
+import LiseMeitner from "../assets/images/lisemeitner.webp";
+import PageAccueil from "../assets/images/pageaccueil.webp";
+import PageArticle from "../assets/images/pagearticle.webp";
+import PageFilm from "../assets/images/pagefilms.webp";
+import PageRevue from "../assets/images/pagerevue.webp";
+import PageFrise from "../assets/images/pagefrise.webp";
+---
+
+<Layout>
+    <main>
+        <section class="px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col gap-2 py-4 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+                <p>Site web - Projet individuel</p>
+                <p class="text-primary sm:text-right">
+                    Lien vers mon site web :
+                    <a
+                        href="https://lise-meitner-et-l-effet-matilda.charlottemettetal.fr/fr/"
+                    >
+                        Lise Meitner & l'effet Matilda
+                    </a>
+                </p>
+            </div>
+            <div class="ligne"></div>
+            <a
+                href="/projets"
+                class="inline-flex items-center gap-3 py-2 font-body text-body4d"
+            >
+                <FlecheGauche />
+                <span>Retour aux projets</span>
+            </a>
+            <h1 class="font-title text-mobile1 sm:text-body1d">
+                Lise Meitner & l'effet Matilda
+            </h1>
+            <p class="py-2 font-body text-body4d font-bold text-primary">
+                Maquettage / HTML / CSS
+            </p>
+            <div
+                class="grille grid grid-cols-1 items-start gap-8 py-4 lg:grid-cols-(--my-grid) lg:gap-[25px]"
+            >
+                <aside class="min-w-0 space-y-4 lg:col-span-1">
+                    <p class="font-body text-body4d font-bold">
+                        Expertise :
+                        <br />UI/UX
+                        <br />Dev HTML / CSS,
+                        <br />accessibilité
+                        <br />Mobile First
+                        <br />Identité :
+                    </p>
+                    <div class="flex gap-2">
+                        <div
+                            class="block size-4 shrink-0 rounded-full border border-black bg-[#FFE9E3]"
+                            title="Rose pâle"
+                        >
+                        </div>
+                        <div
+                            class="block size-4 shrink-0 rounded-full border border-black bg-[#9C9A84]"
+                            title="Gris"
+                        >
+                        </div>
+                        <div
+                            class="block size-4 shrink-0 rounded-full border border-black bg-[#000000]"
+                            title="Noir"
+                        >
+                        </div>
+                        <div
+                            class="block size-4 shrink-0 rounded-full border border-black bg-[#D0C010]"
+                            title="Jaune moutarde"
+                        >
+                        </div>
+                    </div>
+                </aside>
+
+                <article
+                    class="min-w-0 space-y-6 font-body text-body4d leading-relaxed lg:col-span-5"
+                >
+                    <p>
+                        Au cours de ma première année, j’ai réalisé un site
+                        internet abordant le travail de Lise Meitner et traitant
+                        sur l’effet Matilda. Ce projet était à réaliser en
+                        individuel. Travaillant seule, j’ai assuré tous les
+                        rôles, de la conception de la maquette au développement
+                        du site. La commande était de réaliser un site web
+                        bilingue (français et anglais) en mobile first,
+                        présentant une scientifique victime de l’effet Matilda,
+                        ses travaux, ce qu’est l’effet Matilda, un film et un
+                        livre en corrélation avec cet phénomène ainsi qu’une
+                        frise chronologique des différentes victimes.
+                    </p>
+                    <Image
+                        src={LiseMeitner}
+                        alt="Image en noir et blanc de Lise Meitner"
+                        class="mx-auto block w-full max-w-60 sm:max-w-80"
+                    />
+                    <p>
+                        Je savais déjà sur quelle femme scientifique j’allais
+                        travailler. J’ai choisi Lise Meitner en repensant à mon
+                        cours de HGGSP en terminal, où nous avions évoqué Lise
+                        Meitner, femme scientifique qui a découvert la fission
+                        nucléaire mais qui n’a jamais obtenu le prix Nobel car
+                        ses travaux ont été attribué à son collège homme, Otto
+                        Hahn. Par la suite, j’ai effectué des recherches plus
+                        approfondies sur sur cette scientifique, sur ces travaux
+                        et sur son univers. Ces recherches m’ont permit de
+                        dégager une direction artistique, immergée dans le XXème
+                        siècle et le monde scientifique. Pour la couleur
+                        dominante, le background, j’ai opté pour du rose qui
+                        permet de rappeler la féminité de mon sujet. Le jaune
+                        évoque la couleur de certaines substances utilisées en
+                        physique-chimie. Enfin, le gris permet de rappeler
+                        l’époque dans laquelle vivait Lise Meitner. Quand aux
+                        typographies que j’ai utilisé : IBM Plex Serif, Tahoma
+                        et Times New Romance permet une lecture fluide et sans
+                        difficultés.
+                    </p>
+                </article>
+                <div
+                    class="min-w-0 border border-black bg-accent p-2 sm:p-5 lg:col-span-5"
+                >
+                    <div class="grid grid-cols-2 items-start gap-x-2 gap-y-2 sm:gap-x-5">
+                        <Image
+                            src={PageAccueil}
+                            alt="Prototype de la page d'accueil"
+                            class="block h-auto w-full max-w-40"
+                        />
+                        <Image
+                            src={PageArticle}
+                            alt="Prototype de la page article"
+                            class="mt-8 block h-auto w-full max-w-40 sm:mt-16"
+                        />
+                        <Image
+                            src={PageFilm}
+                            alt="Prototype de la page film"
+                            class="-mt-4 block h-auto w-full max-w-40 sm:-mt-8"
+                        />
+                        <Image
+                            src={PageRevue}
+                            alt="Prototype de la page revue"
+                            class="mt-4 block h-auto w-full max-w-40 sm:mt-8"
+                        />
+                        <Image
+                            src={PageFrise}
+                            alt="Prototype de la page frise chronologique"
+                            class="-mt-4 block h-auto w-full max-w-40 sm:-mt-8"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
