@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Projet1 from "../components/Projet1.astro";
+import Projet2 from "../components/Projet2.astro";
+---
+
+<Layout>
+    <main>
+        <section class="px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+                <p class="ml-5">Mes derniers projets</p>
+                <p class="text-primary mr-5">01/03</p>
+            </div>
+            <div class="ligne"></div>
+            <div>
+                <h1
+                    class="font-title text-mobile1 lg:text-h1d sm:ml-8 lg:ml-15">
+                    Éditer le web
+                </h1>
+            </div>
+            <div class="grid grid-cols-1 gap-8 py-4 lg:grid-cols-2 lg:gap-12">
+                <Projet1 />
+                <Projet2 />
+            </div>
+        </section>
+    </main>
+</Layout>
