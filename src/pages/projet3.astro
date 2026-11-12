@@ -1,12 +1,89 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import FlecheGauche from "../assets/icon/fleche_gauche.svg";
 import Chateau from "../assets/images/chateau_montbeliard.webp";
 import Temple from "../assets/images/temple_saint_martin.webp";
-import Immeuble from "../assets/images/immeuble-lion-peugeot.webp";
+import Immeuble from "../assets/images/immeuble_lion_peugeot.webp";
 ---
+
 <Layout>
     <main>
-        <section></section>
+        <section>
+            <div
+                class="flex flex-col gap-2 py-4 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+                <p class="ml-5">Graphisme - Projet individuel</p>
+                <p class="text-primary sm:text-right mr-5">
+                    Concevoir des affiches pour le patrimoine
+                </p>
+            </div>
+            <div class="ligne"></div>
+            <a href="/projets" class="inline-flex items-center gap-3 py-2 font-body text-body4d ml-5">
+                <FlecheGauche/> <span>Retour aux projets</span>
+            </a>
+            <h1 class="font-title text-mobile1 lg:text-h2d ml-5">Des affiches pour Montbéliard</h1>
+            <p class="text-primary py-2 font-body text-body4d font-bold ml-5">Illustration vectorielle / Affinity</p>
+            <div
+                class="grille grid grid-cols-1 items-start gap-8 py-4 lg:grid-cols-(--my-grid) lg:gap-[25px]">
+                <aside class="min-w-0 space-y-4 lg:col-span-1">
+                    <p class="font-body text-body4d font-bold">
+                        Expertise :
+                        <br />Graphisme
+                        <br />Photos
+                        <br />Affinity
+                        <br />Identité :
+                    </p>
+                    <div class="flex gap-2">
+                        <div
+                            class="block size-4 shrink-0 rounded-full border border-black bg-[#B01F25]"
+                            title="Rouge">
+                        </div>
+                        <div
+                            class="block size-4 shrink-0 rounded-full border border-black bg-[#8C6B2E]"
+                            title="Or">
+                        </div>
+                        <div
+                            class="block size-4 shrink-0 rounded-full border border-black bg-[#FFFFFF]"
+                            title="Blanc">
+                        </div>
+                    </div>
+                </aside>
+                <article
+                    class="min-w-0 space-y-6 font-body text-body4d leading-relaxed lg:col-span-5">
+                    <p>
+                        Dans le cadre d’un exercice pédagogique, il m’a été demandé de réaliser trois affiches qui met en valeur le patrimoine de la ville de Montbéliard. Ces affiches devaient avoir une cohésion visuelle entre elles, pour comprendre qu’elles étaient de la même série. Le choix des monuments été libre. Au cours de cet exercice individuel, j’ai assuré le rôle de graphiste.
+                    </p>
+                    <p>
+                        Tout d’abord, j’ai recherché les trois monuments les plus emblématiques de la ville : le Château de Montbéliard, le Temple Saint-Martin et l’immeuble Lion Peugeot. J'ai choisis c'est trois monument car chacun d'eux raconte une histoire. Le château de Montbéliard représente la ville, surnommé la Cité des Princes. Le Temple Saint-Martin représente une part
+                        importante de l'histoire du protestantisme de la ville. L'immeuble Lion Peugeot car il représentet le patrimoine automobile de Montbéliard. En effet, c’est à Montbéliard et à côté, à Sochaux, qu’est née la marque Peugeot. 
+                    </p>
+                    <p>
+                        Pour la cohérence commune, j’ai choisi un fond rouge, symbole de Montbéliard. Ce rouge est le même qui est utilisé dans le logo de PMA (Pays de Montbéliard et Agglomération). J’ai également créé un chemin (caractérisé par les triangles) qui relie les différents bâtiments entre eux pour indiquer le chemin à suivre pour visiter les monuments. Ce chemin s’inspire du parcours du Chat Perché à Dole ou de celui de la Chouette à Dijon. 
+                    </p>
+                    <p>Pour les accroches visuelles, le titre général aux affiches est “#Montbéliard au cœur de l’histoire” car chaque monument raconte une histoire : celle des ducs de Wurtemberg, celle du protestantisme et celle de l’entreprise Peugeot. </p>
+                </article>
+                                <div
+                    class="min-w-0 border border-black bg-accent p-2 sm:p-5 lg:col-span-5">
+                    <div
+                        class="grid grid-cols-2 items-start gap-x-2 gap-y-2 sm:gap-x-5">
+                        <Image
+                            src={Chateau}
+                            alt="Affiche représentant le Château de Montbéliard"
+                            class="block h-auto w-full max-w-60"
+                        />
+                        <Image
+                            src={Temple}
+                            alt="Affiche représentant le Temple Saint-Martin"
+                            class="mt-8 block h-auto w-full max-w-60 sm:mt-16"
+                        />
+                        <Image
+                            src={Immeuble}
+                            alt="Affiche représentant l'immeuble Lion Peugeot"
+                            class="mt-4 block h-auto w-full max-w-60 sm:-mt-8"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </Layout>
